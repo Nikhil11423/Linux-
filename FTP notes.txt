@@ -1,0 +1,35 @@
+FTP (File Transfer Protocol)
+- The FTP is a communication protocol used for the transfer of computer files between a client and server on a computer network.
+- FTP also used to upload/download files from websites and servers.
+
+Remote Server FTP Setup :
+
+1.Need root access
+2.Install vsftpd service(if not already)
+3.yum install vsftpd
+
+config
+/etc/vsftpd/vsftpd.conf
+
+1.anonymous_enable=NO
+2.Uncomment
+  a.ascii_upload_enable=YES
+  b.ascii_download_enable=YES
+3.May add
+  a.use_localtime=YES 
+
+Use this command 
+--> cat /etc/vsftpd
+
+* Start and enable vsftpd
+1.systemctl start vsftpd
+2.systemctl enable vsftpd
+
+* Stop firewall or allow FTP to firewall
+1.We will temporarily stop firewall
+ systemctl stop firewall
+
+* How to transfer file?
+- ftp 192.168.0.0 (ip of remote server)
+- enter username/password
+- put <file_name>

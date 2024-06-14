@@ -1,0 +1,60 @@
+# Update the Package Manager
+--> sudo yum update
+
+# Install apache
+--> sudo yum install httpd -y /sudo apt install apache2
+
+
+# Start the apache service
+--> sudo systemctl start httpd
+--> sudo systemctl enable httpd
+
+# Check the status of apache
+--> sudo systemctl status httpd
+
+*****************************************************************
+# Install the PHP 8
+--> sudo yum install php
+
+# 
+
+
+
+1) yum update -y
+2)yum install epel-release
+3)sudo yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+4) sudo yum install -y https://rpms.remirepo.net/enterprise/remi-release-7.rpm
+5) sudo yum module enable php:remi-8.0 -y / sudo amazon-linux-extras enable php8.0
+* sudo yum clean metadata
+* yum install php-cli php-pdo php-fpm php-mysqlnd
+5) sudo yum -y install yum-utils
+6)sudo yum-config-manager --disable 'remi-php*'
+7)sudo yum-config-manager --enable remi-php80
+8)sudo yum install php php-cli php-common
+9)sudo yum install php php-cli php-common php-fpm
+
+[15:00] Praveena Kumar
+10)yum install phpmyadmin
+
+11) yum install wget  Zip net-tools
+
+12) yum install zip unzip
+
+installing my sql
+
+13)wget https://dev.mysql.com/get/mysql80-community-release-el7-7.noarch.rpm
+
+14)rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2023
+
+15) sudo rpm -ivh mysql80-community-release-el7-7.noarch.rpm
+
+16)sudo yum install -y mysql-server
+
+17)sudo systemctl status mysqld
+
+18)systemctl start mysqld
+   installing httpd
+19)yum install httpd
+20)  systemctl enable  httpd
+21)  systemctl start  httpd
+22) systemctl status httpd

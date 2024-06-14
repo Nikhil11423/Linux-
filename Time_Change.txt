@@ -1,0 +1,25 @@
+How to change Date UTC to IST?
+   
+    Step1 :- Write Date command is terminal
+            --> Date
+    Step2 :- 
+            ls -l /etc/localtime
+    Step3 :-  ls -l /usr/share/zpneinfo
+    
+    Step4 :-  ls -l /usr/share/zoneinfo		   
+    
+    Step5 :-  ls -l /usr/share/zoneinfo/Asia/Kolkata		   
+    
+    Step6 :-  ls -l /etc/localtime
+		   
+    Step7 :-  unlink /etc/localtime
+		   
+    Step8 :-  ls -l /etc/localtime
+		   
+    Step9 :-  date
+		   
+    Step10 :-  ln -s /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+		   
+    Step11 :-  ls -l /etc/localtime
+		   
+    Step12 :-  date

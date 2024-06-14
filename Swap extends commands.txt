@@ -1,0 +1,23 @@
+*Swap Paratition and extend the swap
+--> sudo dd if=/dev/zero of=/swapfile bs=1M count=4096 status=progress
+ Check the file
+--> ls
+
+--> sudo chmod 600 /swapfile
+
+*Formatting swap file
+--> sudo mkswap /swapfile
+
+--> sudo swapon /swapfile
+
+--> swapon
+
+--> sudo vim /etc/fstab
+
+*Adding the swapfile in vi editor
+--> /swapfile2     none swap sw 0 0
+
+*Reboot the system
+--> sudo reboot
+
+--> free 

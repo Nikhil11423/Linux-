@@ -1,0 +1,74 @@
+* Network Troubleshooting steps
+ 1.Check the hardware :
+    When you’re beginning the troubleshooting process, check all your hardware to make sure it’s connected properly, turned on, and working.
+ 2.Use ipconfig
+    Open the command prompt and type “ipconfig” (without the quotes) into the terminal. The Default Gateway (listed last) is your router’s IP. Your computer’s IP address is the number next to “IP Address.” If your computer’s IP address starts with 169, the computer is not receiving a valid IP address. If it starts with anything other than 169, your computer is being allocated a valid IP address from your router.
+    Try typing in “ipconfig /release” followed by “ipconfig /renew” to get rid of your current IP address and request a new one. This will in some cases solve the problem. If you still can’t get a valid IP from your router, try plugging your computer straight into the modem using an ethernet cable. If it works, the problem lies with the router.   
+ 3.Use ping or tracet
+    If your router is working fine, and you have an IP address starting with something other than 169, the problem’s most likely located between your router and the internet. At this point, it’s time to use the ping tool. Try sending a ping to a well-known, large server, such as Google, to see if it can connect with your router. You can ping Google DNS servers by opening the command prompt and typing “ping 8.8.8.8”; you can also add “-t” to the end (ping 8.8.8.8 -t) to get it to keep pinging the servers while you troubleshoot. If the pings fail to send, the command prompt will return basic information about the issue.
+ 4.Perform a DNS check
+    Use the command “nslookup” to determine whether there’s a problem with the server you’re trying to connect to. If you perform a DNS check on, for example, google.com and receive results such as “Timed Out,” “Server Failure,” “Refused,” “No Response from Server,” or “Network Is Unreachable,” it may indicate the problem originates in the DNS server for your destination. (You can also use nslookup to check your own DNS server.)
+ 5.Contact the ISP
+    If all of the above turn up no problems, try contacting your internet service provider to see if they’re having issues. You can also look up outage maps and related information on a smartphone to see if others in your area are having the same problem.
+ 6.Check on virus and malware protection
+    Next, make sure your virus and malware tools are running correctly, and they haven’t flagged anything that could be affecting part of your network and stopping it from functioning.
+ 7.Review database logs.
+    Review all your database logs to make sure the databases are functioning as expected. If your network is working but your database is full or malfunctioning, it could be causing problems that flow on and affect your network performance.
+* Network Troubleshooting best practices
+ 1.Collect infromation
+ 2.Customize logs
+ 3.Check access and security
+ 4.Follow an escalation framework
+ 5.Use monitoring tools. 
+
+* Troubleshooting FTP-server 
+ 1.Verify connectivity :
+     Use ping or similar network tools to ensure that the network connection between the client and the FTP server is intact.
+
+ 2.Check configuration :
+     Review the FTP server and client configurations for any incorrect settings, including usernames, 
+     passwords, port numbers, and firewall settings that might block the connection.
+
+ 3.Review logs :
+     Examine the FTP server and client logs for error messages or clues that can indicate what might be causing the problem, 
+     such as authentication failures or data transfer errors.
+
+* Resolve DNS issues :
+     solve DNS issues using a few steps:
+
+   a) Restarting the router or modem to refresh the connection.
+
+   b) Flushing the DNS cache on my computer to clear outdated or incorrect DNS information. 
+      This can be done by running the command ipconfig /flushdns in the command prompt (Windows) or clearing the DNS cache in macOS.
+
+   c) Changing my DNS server settings to use a public DNS service like Google DNS or OpenDNS, which can be more reliable than your ISP's default servers.
+
+   d) Checking for any incorrect DNS settings on my local network or computer.
+
+* Troubleshoot IP related problems :
+
+   a) Check the computer's IP configuration with commands like ipconfig (Windows) or ifconfig (Linux/macOS) to ensure the correct IP address, subnet mask, and default gateway.
+  
+   b) Renew the IP address using ipconfig /renew in Windows or restarting the network service in Linux/macOS.
+
+   c) Verify that the DHCP server is functioning correctly if the computer is supposed to obtain an IP address automatically.
+
+   d) Check for IP address conflicts on the network.
+
+   e) Ensure the router and modem are functioning correctly, and there are no outages with your ISP.
+
+* Troubleshoot local connectivity issues :
+
+   a) Checking physical connections such as cables and ports to ensure they are secure and undamaged.
+
+   b) Verifying that network devices like routers and switches are powered on and functioning correctly.
+
+   c) The ping command tests connectivity to local devices, including the default gateway.
+
+   d) Ensuring the computer's network adapter is enabled and functioning correctly.
+
+   e) Check for correct IP configuration and no IP conflicts on the network.
+
+   f) Restarting network devices to resolve any temporary glitches.
+
+   g) Updating network adapter drivers and firmware on network devices to the latest versions.”

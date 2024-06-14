@@ -1,0 +1,104 @@
+Issue 1 : Server is not reachable or unable to connect Approach 
+Solution :
+#Ping the server by hostname and ip address
+-> Hostname/IP Address is pingable
+--> Issue might be on the client side as server is reachable
+-> Hostname is not pingable but IP Address is pingable
+--> Could be the DNS issue
+---> check /etc/hosts
+---> check /etc/hosts
+---> check /etc/resolv.conf
+---> check /etc/nsswitch.conf
+---> (Optional) DNS can also be defined in the
+ /etc/sysconfig/network-scripts/ifcfg-<interface>
+-> Hostname/IP Address both are not pingable
+--> Check the other server on its same network to see if there is Network side access issue or other overall something bad
+---> False: Issue is not overall network side but its with that host/server
+---> True: Might be overall network side issue
+--> Logged into server by Virtual Console, if the server is PoweredON. Check the uptime
+--> Check if the server has the IP, and has UP status of Network interface
+---> (Optional) Also check IP related information from
+  /etc/sysconfig/network-scripts/ifcfg-<interface>
+--> Ping the gateway, also check routes
+--> Check Selinux, Firewall rules
+--> Check physical cable conn
+
+Issue 2 : Unable to connect to website or an application Approach 
+Solution :
+-> Ping the server by Hostname and IP Address
+-> False: Above Troublshooting Diagram “Server is not reachable or cannot connect”
+-> True: Check the service availabilty by using telnet command with port
+-->  True: Service is running
+-->  False: Service is not reachable or running
+--->   Check the service status using systemctl or other command
+--->   Check the firewall/selinux
+--->   Check the service logs
+--->   Check the service configuration
+
+Issue 4 : Disk Space is full issue or add/extend disk space Approach / 
+Solution :
+
+├── System Performance degradation detection
+
+│ ├── Application getting slow/unresponsive
+
+│ ├── Commands are not running (For Example: as / disk space is full)
+
+│ ├── Cannot do logging and other etc
+
+├── Analyse the issue
+
+│ ├── df command to find the problematic filesystem space issue
+
+├── Action
+
+│ ├── After finding the specific filesystem, use du command in that filesystem to get which files/directories are large
+
+│ ├── Compress/remove big files
+
+│ ├── Move the items to another partition/server
+
+│ ├── Check the health status of the disks using badblocks command (For Example: #badblocks -v /dev/sda)
+
+│ ├── Check which process is IO Bound (using iostat)
+
+│ ├── Create a link to file/dir
+
+├── New disk addition
+
+│ ├── Simple partition
+
+│ │ ├── Add disk to VM
+
+│ │ ├── Check the new disk with df/lsblk command
+
+│ │ ├── fdisk to create partition. Better to have LVM partition
+
+│ │ ├── Create filesytem and mount it
+
+│ │ ├── fstab entry for persistent
+
+│ ├── LVM Partition
+
+│ │ ├── Add disk to VM
+
+│ │ ├── Check the new disk with df/lsblk command
+
+│ │ ├── fdisk to create LVM partition
+
+│ │ ├── PV, VG, LV
+
+│ │ ├── Create filesytem and mount it
+
+│ │ ├── fstab entry for persistent
+
+│ ├── Extend LVM partition
+
+│ │ ├── Add disk, and create LVM partition
+
+│ │ ├── Add LVM partition (PV) in existing VG
+
+│ │ ├── Extend LV and resize filesystem
+
+
+

@@ -1,0 +1,34 @@
+*What is a firewall?
+  A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on the rules defined. 
+
+* Types of firewall
+1.Software Based
+  Running on Operating System
+2.Hardware Based
+  A dedicated appliance with firewall software btn two different networks.
+
+* Check if firewalld service is installed or not using this command
+
+--> rpm -qa | grep firewalld
+
+* Stop/Start firewalld Service
+ 1.systemctl start/enable firewalld
+ 2.systemctl start/enable firewalld
+ 3.systemctl status firewalld
+ 4.systemctl restart firewalld
+
+* Check the rules of firewalld
+  --> firewall-cmd --list-all
+
+* Listing of all the services firewalld is aware of :
+  --> firewall-cmd --get-services
+
+*To reload the config of firewalld
+  --> firewall-cmd --reload
+
+* Firewall has multiple zones, to get list
+ --> firewall-cmd --get-zines
+* To see the list of active zones
+  --> firewall-cmd --get-active-zones
+* To get firewall rules for a specific zone
+  --> firewall-cmd --zone=public --list-all

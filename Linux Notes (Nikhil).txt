@@ -1,0 +1,1167 @@
+******************************************************************************************************************************
+What is the Linux ? 
+ Linux is an open-source operating system. It is like Windows, Mac, Android, etc.
+ Unix is also an operating system like Linux. It is an commercial OS. 
+
+ Linux is a Multiuser and Multitasking.
+
+ It consists of three parts: Kernal, Shell and Programs.
+******************************************************************************************************************************
+What is Kernel?
+ The kernel is a computer program that is the core of a computer’s operating system, with complete control over everything in the system. 
+ It manages the following resources of the Linux system,
+
+ File management
+ Process management
+ I/O management
+ Memory management
+ Device management etc.
+******************************************************************************************************************************
+What is Shell?
+ A shell is a special user program that provides an interface for the user to use operating system services. 
+ Shell accepts human-readable commands from users and converts them into something which the kernel can understand. 
+ It is a command language interpreter that executes commands read from input devices such as keyboards or from files. 
+ The shell gets started when the user logs in or starts the terminal.
+******************************************************************************************************************************
+What is the Programs ?
+ A Linux command is a program or utility that runs on the command line.
+ A command line is an interface that accepts lines of text and processes
+******************************************************************************************************************************
+Advantages of Linux 
+ 1. Open Source
+ 2. Security
+ 3. Free
+ 4. Lightweight
+ 5. Stability
+ 6. Performance
+ 7. Flexibility
+ 8. Software Updates
+ 9. Distributions/ Distros
+ 10. Live CD/USB
+ 11. Graphical User Interface
+ 12. Suitable for programmers
+ 13. Community Support
+ 14. Privacy
+ 15. Networking
+ 16. Compatibility
+ 17. Installation
+ 18. Multiple Desktop Support
+ 19. Multitasking
+ 20. Heavily Documented for beginners
+******************************************************************************************************************************
+Features of Linux 
+- Multiuser capability : Multiple users can access the same system resources like memory, hard disk, etc. 
+  But they have to use different terminals to operate.
+
+- Multitasking : More than one function can be performed simultaneously by dividing the CPU time intelligently.
+
+- Portability : Portability doesn't mean it is smaller in file size or can be carried in pen drives or memory cards. 
+  It means that it support different types of hardware.
+
+- Security: It provides security in three ways namely authenticating (by assigning password and login ID), 
+  authorization (by assigning permission to read, write and execute) and encryption (converts file into an unreadable format).
+
+- Live CD/USB : Almost all Linux distros provide live CD/USB so that users can run/try it without installing it.
+
+- Graphical User Interface (X Window system) : Linux is command line based OS but it can be converted to GUI based by installing packages.
+
+- Support's customized keyboard : As it is used worldwide, hence supports different languages keyboards.
+
+- Application support : It has its own software repository from where users can download and install many applications.
+
+- File System : Provides hierarchical file system in which files and directories are arranged.
+
+- Open Source: Linux code is freely available to all and is a community based development project.
+******************************************************************************************************************************
+Why Use Linux 
+- Linux is completely different from other operating systems in many ways.
+
+- It is an open source OS which gives a great advantage to the programmers as they can design their own custom operating systems.
+
+- It gives you a lot of option of programs having some different features so you can choose according to your need.
+
+- A global development community look at different ways to enhance its security, hence it is highly secured and robust so you 
+  don't need an anti virus to scan it regularly. Companies like Google, Amazon and Facebook use linux in order to protect their 
+  servers as it is highly reliable and stable.
+
+- Above all you don't have to pay for software and server licensing to install Linux, its absolutely free and you can install it on 
+  as many computers as you want.
+
+- Its completely trouble free operating system and don't have an issue with viruses, malware and slowing down your computer.
+
+******************************************************************************************************************************
+
+Types of OS in linux 
+
+ - Android              - Elementary OS
+ - Arch Linux           - Fedora Linux
+ - Kali Linux           - Gentoo Linux
+ - Linux Lite           - Linux Mint	  		     
+ - SUSE                 - Slackware
+ - Debian	            - Manjaro Linux
+ - Puppy Linu           - MX Linux          
+ - Pop!_OS              - Solus
+ - openSUSE
+
+ Ubuntu and all its versions (Gnome, Kubuntu —using KDE Plasma Desktop, Ubuntu mate, Xubuntu, and Lubuntu—just to name a few)
+ Zorin OS
+******************************************************************************************************************************
+
+- Basic commands :
+
+	1.PWD             :- show the present working directory.
+					  
+	2.ls              :- list all files and directories from a given location, 
+	                     if the location is not given it shows the list from the current directory.
+					  
+	3.cd              :- change directory or switch directory.
+					  
+	4.touch           :- This is used to create an empty file with default permissions.
+					  
+	5.rm              :- is used to remove files and directories from the location.
+					  
+	6.mv              :- move the file from one location to another location or rename the file or directory.
+					  
+	7.cp              :- make a copy of an existing file using the cp command.
+					  
+	8.mkdir           :- command used to create a new directory.
+					  
+	9.rmdir           :- used to remove directory.
+        
+    10.touch          :- Create blank/empty files
+	
+    11.ln             :- Create symbolic links (shortcuts) to other files
+	
+    12.clear          :- Clear the terminal display
+	
+	13.cat            :- Display file contents on the terminal 
+	
+    14.echo           :- Print any text that follows the command
+	
+    15.less           :- Linux command to display paged outputs in the terminal
+	
+    16.man            :- Access manual pages for all Linux commands
+	
+    17.grep           :- Search for a string within an output
+	
+    18.head           :- Return the specified number of lines from the top
+	
+    19.tail           :- Return the specified number of lines from the bottom
+	
+    20.diff           :- Find the difference between two files    
+	
+    21.cmp            :- Allows you to check if two files are identical
+	
+    22.service        :- Linux command to start and stop services
+	
+    23.ps             :- Display active processes
+	
+    24.comm           :- Combines the functionality of diff and cmp 
+	
+	25.find           :- is used to find the location of any file.
+	            
+	25.which          :- find executable file path which you are using
+	       
+	26.chmod          :- is used to change the file permissions.
+	       
+	27.chown          :- is used to set the ownership.
+	       
+	28.useradd        :- used to add a new user at OS level.
+	       
+	29.usermod        :- is used to modify existing user settings.
+	       
+	30.userdel        :- delete exiting user from OS level.
+	       
+	31.passwd         :- is used to set or reset the password for OS users.
+	       
+	32.who            :- show the list of all OS users' connections.
+	       
+	33.ps             :- show the current process information
+	       
+	34.kill           :- used to kill the running process
+	
+	35.uname & hostname :-  get information about the host
+	  
+	36.cal            :- display the calender.   
+	
+	37.vmstat         :- used to check OS performance.
+	
+	38.free           :- shows the current usage of memory
+	
+	39.iostat         :- Report OS i/o stats.
+	
+	40.sar            :- monitor the CPU, memory, disk, and network information using sar command.
+	
+	41.mpstat         :- show stats of processor
+	
+	42.top            :- show the top running tasks in OS
+	
+	43.init           :- shutdown and reboot the server.
+	
+	44.passwd         :- used to change the password.
+	
+	45.cat            :- using the cat command we can open a file on the terminal or find the ORA-ERROR line in the file.
+	
+	46.rm             :- Remove old files using the find command
+	            
+        47.-c             :- This prints only a count of the lines that match a pattern
+	            
+	48.-h             :- Display the matched lines, but do not display the filenames.
+	            
+	49.-i             :- Ignores, case for matching
+	            
+	50.-l             :- Displays list of a filenames only.
+	            
+	51.-n             :- Display the matched lines and their line numbers.
+	            
+	52.-v             :- This prints out all the lines that do not matches the pattern
+	
+	53.-e exp         :- Specifies expression with this option. Can use multiple times.
+	
+	54.-f file        :- Takes patterns from file, one per line.
+	
+	55.-E             :- Treats pattern as an extended regular expression (ERE)
+	
+	56.-w             :- Match whole word
+	
+	57.-o             :- Print only the matched parts of a matching line, with each such part on a separate output line.
+	
+	58.-A n           :- Prints searched line and nlines after the result.
+	
+	59.-B n           :- Prints searched line and n line before the result.
+	
+	60.-C n           :- Prints searched line and n lines after before the result.
+	
+	61.Compress tools in Linux :- These all are the tools available in Linux tar, star, gzip, bzip2, zip, cpio. 
+	          	 	   These tools are used to compress the files, which is consumed a high amount of space on the filesystem.
+	     		   The gzip command compresses the original file and returns it with the .gz extension.
+
+******************************************************************************************************************************
+ What is Shell Scripting ?
+   Usually, shells are interactive, which means they accept commands as input from users and execute them. 
+   However, sometimes we want to execute a bunch of commands routinely,so we have to type in all commands each time in the terminal.
+
+   As a shell can also take commands as input from file,we can write these commands in a file and can execute them in shell to avoid 
+   this repetitive work. These files are called Shell Scripts or Shell Programs
+
+  Shell scripting is a type of programming used to automate the tasks performed on a Unix system.
+******************************************************************************************************************************
+Why do we need shell scripts?
+  There are many reasons to write shell scripts:
+
+- To avoid repetitive work and automation
+- System admins use shell scripting for routine backups.
+- System monitoring
+- Adding new functionality to the shell etc.
+******************************************************************************************************************************
+Some Advantages of shell scripts :
+
+ - The command and syntax are exactly the same as those directly entered in the command line, 
+  so programmers do not need to switch to entirely different syntax
+ - Writing shell scripts are much quicker
+ - Quick start
+ - Interactive debugging etc.
+******************************************************************************************************************************
+Some Disadvantages of shell scripts: 
+
+- Prone to costly errors, a single mistake can change the command which might be harmful.
+- Slow execution speed
+- Design flaws within the language syntax or implementation
+- Not well suited for large and complex task
+- Provide minimal data structure unlike other scripting languages. etc.
+******************************************************************************************************************************
+VI Editor (visual interface):
+  vi” is a text editor that is used to create and edit text files. Shell scripting is a type of programming used to automate 
+  the tasks performed on a Unix system.  
+******************************************************************************************************************************
+    1.i    (insert mode)
+    2.#    (command mode) 
+    3.esc  (exit mode) 
+	note : (press escape for come out of insert mode) 
+	
+Example : vi linux --filename	
+
+vi editor commands :  
+	: q	      -   quite 
+	: q!      -   quit without saving
+	: wq      -   save and quit
+	: wq!     -   post to quit with saving changes 
+
+	i         -   before cursor
+	a         -   after cursor
+	A         -   at the end of the line
+	o         -   open a line below the current line
+	O         -   open a line above the current line
+	r         -   replace the current character
+	R         -   replace characters overwrite
+
+	i         —   Switch to Insert mode.
+	Esc       —   Switch to Command mode.
+	:w        —   Save and continue editing.
+	:wq or ZZ —   Save and quit/exit vi.
+	:q!       —   Quit vi and do not save changes.
+	yy        —   Yank (copy) a line of text.
+	p         —   Paste a line of yanked text below the current line.
+	o         —   Open a new line under the current line.
+	O         —   Open a new line above the current line.
+	A         —   Append to the end of the line.
+	a         —   Append after the cursor’s current position.
+	I         —   Insert text at the beginning of the current line.
+	b         —   Go to the beginning of the word.
+	e         —   Go to the end of the word.
+	x         —   Delete a single character.
+	dd        —   Delete an entire line.
+	Xdd       —   Delete X number of lines.
+	Xyy       —   Yank X number of lines.
+	G         —   Go to the last line in a file.
+	XG        —   Go to line X in a file.
+	gg        —   Go to the first line in a file.
+	:num      —   Display the current line’s line number.
+	h         —   Move left one character.
+	j         —   Move down one line.
+	k         —   Move up one line.
+	l         —   Move right one character.
+******************************************************************************************************************************
+Redirection operators :
+
+  The redirection operators (<, >, >>, >&) are followed by a filename. This file is opened by the shell 
+  before the command on the left-hand side is executed. Pipes,represented by a vertical bar (|) symbol, 
+  allow the output of one command to be sent to the input of another command.
+
+example : [hareesh@dev01 ~]$ cat > ravi
+          1 2 3 4 5
+          6 7 8 9 10
+[hareesh@dev01 ~]$ cat >> ravi
+          1  2  3  4  5
+          6  7  8  9  10
+          11 12 13 14 15
+******************************************************************************************************************************
+  
+    cat > ravi
+   	cat >> ravi
+	cp ravi hari
+	mv hari ravi
+	ls >  myoutput
+	wc -l ravi (How many lines inside the ravi file)
+	wc -l < myoutput
+	wc -l < ravi > myoutput
+	mkdir -p file1/file2/file3 (sub directories)
+	cp ravi hari (copying data)
+	mv ravi hari (moving data)
+	rm file1 (deleting/removing file)
+	ls -l (list of files and directories)
+	ls -lrt ((list of files and directories with incrimental order, recently userd comes down)
+	df -h file2 (see the space for perticular file/directory)
+******************************************************************************************************************************
+Linux file permissions  :
+     Linux is a multi-user operating system, so it has security to prevent people from accessing each other’s confidential files.
+   
+  There’s a lot of information in those lines. 
+
+ 1.The first character = ‘-‘, which means it’s a file ‘d’, which means it’s a directory.
+ 2.The next nine characters = (rw-r–r–) show the security
+ 3.The next column shows the owner of the file. (Here it is `root`)
+ 4.The next column shows the group owner of the file. (Here it is `root` which has special access to these files)
+ 5.The next column shows the size of the file in bytes.
+ 6.The next column shows the date and time the file was last modified.
+ 7.Last Column = File_name or Directory_name. (For example, here are: prac, snap, test, example)
+ 
+ What are the three kinds of file permissions in Linux?
+  There are three kinds of file permissions in Linux Read, write, and execute.
+  Permissions for a file or directory may be restricted by types.
+* There are 3 type of permissions :
+   r(4)  :- “read” the file’s contents. 
+   w(2)  :- “write”, or modify, the file’s contents. 
+   x(1)  :- “execute” the file. This permission is given only if the file is a program. 
+ 
+  `+` :- Add permissions.  
+  `-` :- Remove permissions.
+  `=` :- Set the permissions to the specified values.
+ 
+* Each permission(rwx) can be controlled at three levels:
+   u :- user
+   g :- group
+   o :- other
+
+- Change permissions using chmod (change mode) command.
+    chmod u+rwx xyz.txt
+
+- can also change multiple permissions at once.
+   chmod ugo-rwx xyz.txt	
+
+- Permission using numeric values :
+  permission to a file and directory can also be assigned numerically
+ 
+ --> chmod 444 file
+
+ --> chmod 746 file 
+  (7 :- read+write+excecute, 6 :- read+white , 4 :- read)
+******************************************************************************************************************************
+Linux special permissions :
+  there are 3 special permissions apart from these “rwx” permissions which are SUID,SGID,The Sticky Bit.
+
+1.Set-user-ID (SUID)
+   In Linux by default when a user executes a file, The file gets executed with the privileges of the user who executes it. 
+   If we set SUID(set-user-ID) bit on the executable this behavior can be changed, then the file will always run with privileges 
+   of the owner of the file, no matter who runs the executable.
+   Note: Only owner of the file or root can set the SUID bit
+
+ 1. You can set SUID bit by passing u + s to the chmod command:
+       chmod u+s myfile
+
+ 2. Alternatively, you can use octal notional by prefixing “4” to the octal string. (like 4724 instead of 724).
+       chmod 4755 myfile
+
+ 3. You can remove SUID bit by passing u – s to the chmod command:  
+       chmod u-s myfile    
+******************************************************************************************************************************
+2.Set-group-ID (SGID)
+    Set-group-ID bit on a file: Set-group-ID (SGID) is similar to SUID except that, an executable with SGID bit set runs with the 
+    privileges of the group which owns of the file
+
+ 1. You can set SGID bit by passing g + s to the chmod command:
+      chmod g+s myfile
+
+ 2. Alternatively, you can use octal notional by prefixing “2” to the octal string. (like 2755 instead of 755).
+      chmod 2755 myfile
+
+ 3. You can remove SGID bit by passing g – s to the chmod command:
+      chmod g-s myfile
+******************************************************************************************************************************
+3.Sticky Bit
+    If the sticky bit on a directory is set, subdirectories/Files under that directory can only be deleted by either owner of the file, 
+    owner of the directory, or the root user. 
+    This special permission is useful to prevent users from deleting other user’s file inside a shared folder where everyone has 
+    read, write, and execute access.
+
+ 1.Let start by creating a shared folder where everyone has read, write, and execute permission.
+     sudo mkdir /tmp/sharefolder
+
+ 2.Inside this shared folder, it is possible to remove directory/files of other users.
+      rm -r /tmp/sharefolder/ghost_dir/
+
+ 3.Now let’s set the sticky bit on the sharedFolder.
+      sudo chmod +t /tmp/sharedfolder
+
+Note: As you notice “t” letter instead of usual “x” in execute permission for the others. 
+      This letter “t” indicates that a sticky bit has been set for the file or directory in question. 
+      Now because the sticky bit is set on the sharedFolder, files/directory could only be deleted by the owners or root user.
+
+******************************************************************************************************************************
+User Management in Linux : 
+   What is User Management ?
+     A user is an entity, in a Linux operating system, that can manipulate files and perform several other operations. 
+     Each user is assigned an ID that is unique for each user in the operating system.
+ In this post, 
+    ID 0 is assigned to the root user and the IDs 1 to 999 (both inclusive) are assigned to the system users 
+    and hence the ids for local user begins from 1000 onwards. 
+******************************************************************************************************************************
+Linux User Management
+   User management includes everything from creating a user to deleting a user on your system. 
+   User management can be done in three ways on a Linux system.
+ 
+- Using id command, you can get the ID of any username.
+    id username
+	
+- The command to add a user. useradd command adds a new user to the directory. 
+    sudo useradd username
+	
+- Using passwd command to assign a password to a user. After using this command we have to enter the new password for the user 
+  and then the password gets updated to the new password. 	
+     passwd username
+	 
+- Accessing a user configuration file
+     cat /etc/passwd
+	 
+- Shadow files are the encrypted user passwords which are kept in /etc/shadow. This file is read-only directory and can be read only by root.
+     /etc/shadow  	 
+	 
+- The command to change the user ID for a user
+     usermod  -u new_id username
+	 
+- Command to Modify the group ID of a user.
+     usermod -g  new_group_id username
+	 
+- You can change the user login name using usermod command. The below command is used to change the login name of the user. 
+  The old login name of the user is changed to the new login name provided. 
+     sudo usermod -l new_login_name old_login_name  
+	 
+- You can also delete a user name.
+     userdel -r username
+	 
+- The groupadd command creates or add a group in our system.	 
+     groupadd <groupName>  
+	 
+- Group File :
+    The /etc/group file defines the group membership. A user can be a member of more than one group.
+   
+  Syntax:- /etc/group  
+
+- Groups :
+    The group command tells about the group where current user belongs to.
+
+  Syntax:- groups  
+  
+- usermod :
+     The group members can be edited with usermod or useradd command. If a group is not listed then by default, usermod command
+     will remove the user from every group of which he is a member.Here, -a (append) option is used to prevent this from happening.
+		
+  Syntax: usermod -a -G <group> <userName>  
+  
+- groupmod :-
+     With the help of groupmod command you can change the name of an already existing group.
+
+  Syntax: groupmod -n <oldGroup> <newGroup>   
+  
+- gruopdel :-
+     The command groupdel will delete a group permanently from the system.  
+ 
+  Syntax: groupdel <group>  
+  
+- gpasswd :
+    Control of group membership can be passed on to another user with gpasswd command.
+
+  Syntax: gpsswd -A <user> <group>     
+******************************************************************************************************************************
+Add User to Group :
+
+   Linux allows us to add users to a specific user group. A user account can be added to more than one group.
+   
+ Types of Linux Groups
+   1.Primary group
+   2.Secondary or supplementary group
+
+ Add a Group
+
+    To create a new user group on a Linux system, execute the groupadd command
+  
+  Example:-  sudo groupadd NBGroup
+******************************************************************************************************************************
+How to add a user to a Group :
+
+   Adding users to a group is a straight forward process. We can add users to a group by using usermod command. 
+   To add a user to a group, execute this command, followed by the group name and user name.
+   
+- The group name is the name of a group in which you want to add a particular user.
+   
+   sudo usermod -a -G jtpGroup user1  
+   
+- Add a user to multiple groups
+   
+- Linux system allows us to add a user to various groups. However, a user only can be added to one primary group,
+	but it can be added to any number of the secondary group.
+	
+	 Example :- sudo usermod -a -G NBGroup, NBGroup2, NBGroup3 user1  
+	
+- List the Groups in Linux
+	
+	1.To list all the available groups in the Linux system Using this command
+     -->   getent group  
+		
+	2.The Linux system allows us to remove a user from a group.Remove a User from Group
+	 -->  sudo gpasswd -d user1 NBGroup  
+	   
+	3.Change a User's Primary Group  
+    -->  sudo usermod -g NBGroup2 user1 	
+******************************************************************************************************************************
+Linux id Command :
+
+  Linux id command is used to print the genuine and effective user ID and group ID. 
+  A user ID (UID) is a particular user identity, whereas group IDs (GIDs) can contain more than one user's identity. 
+  This command is a useful tool for user management.
+
+Syntax:
+
+   id [option]... [user name]  
+	   
+   -a: It is used to ignore the compatibility with other versions.
+   -Z, --context: It is used to print only the security context of the process.
+   -g, --group: It is used to print only the effective GID.
+   -G, --groups: It is used to print all group Ids.
+   -n, --name: It is used to print a name instead of a number.
+   -r, --real: It is used to print the real ID instead of the effective ID, with -ugG
+   -u, --user: It is used to print only the effective UID.
+   -z, --zero: It is used to delimit entries with NULL characters, except the whitespace;
+   --help: It used to display the help documentation and exit.
+
+- Find a specific user's UID
+      id -u Nikhil  
+
+- Find a specific user's GID
+      id -g Nikhil
+******************************************************************************************************************************
+Archive files:
+
+    An archive file is a collection of files and directions that are stored in one file.
+    The archive file is not compressed it uses the same amount of disk space as all the individual files 
+    and directories combined.
+    A compressed file is acollection of files and dirctories the stored one file and stored
+    in a way that uses less disk space than all the individual files and directories combined.
+    An archive file is not compressed,but a compressed file can be an archive file.
+******************************************************************************************************************************
+Tar Command:
+
+   Tar stand for TAR Archiver.The tar program is used to create ,maintain ,modify and extract files that are archived in the tar format
+   This is agood way to create backups and archives.The tar command does not compress the files by default.
+   Archiving and compressing files are usefulwhen creating backups & transferring data across a network.
+******************************************************************************************************************************
+Compression Tools:
+
+   The Archive can be compressed using compression tools gzip,bzip2 or xz.
+   Gzip compression is most frequently used to create (.tar.gz)or(.tgz)files,tar command also supports
+   bzip2 and xz compression.
+   This allows you to create bzip2-compressed files,often named(.tar.bz2),(.tar.bz)or (.tbz) files.
+   The xz compressed files,named(.tar.xz).
+ 
+   -c Create a new archive(Create)
+   -j Compress the tar file with bzip2
+   -z Compress the tar file with gzip
+   -J Compress the tar file with xz
+   -x Extract files from an archive (Extract)
+   -v Display Verbose Information(Verbose)
+   -t Lists the contents of an archive (Contents)
+   -f filename of the archive to work on(file name)
+   -u Archives and adds to an existing archive file
+   -A Concatenates the archive files
+   -W Verify an archive file
+   -C Change the extracted files location (Chnage)
+******************************************************************************************************************************
+What is Crontab? (Scheduling the job)
+
+   The crontab is a list of commands that you want to run on a regular schedule, and also the name of the
+   command used to manage that list.cron is the system process which will automatically perform tasks for 
+   you according to a set schedule.The schedule is called the crontab, which is also the name of the progarm
+   used to edit that schedule.
+   
+- Linux Crontab Syntax
+   MI  N HOUR DOM MON DOW CMD
+ 
+- Scheduling a Job For a Specific Time
+   30  08 10 06 * /home/maverick/full-backup
+ 
+- To view the Crontab entries
+    crontab -l
+ 
+- To edit a crontab entries, use 
+    contab -e
+ 
+- To schedule a job for every minute using Cron
+    *  * * * * CMD
+ 
+- To schedule a job for more than one time (e.g. Twice a Day)
+     00 11, 16 * * * /home/maverick/bin/incremental-backup
+  
+- To schedule a job for certain range of time (e.g. Only on Weekdays)
+     00 09-18 * * * /home/maverick/bin/check-db-status
+  
+- To schedule a background Cron job for every 10 minutes
+     */10 * * * * /home/maverick/check-disk-space
+  
+- To schedule a job for first minute of every year using @yearly
+     @yearly /home/maverick/bin/annual-maintenance
+ 
+- To schedule a job for first minute of every year using @monthly
+     @monthly /home/maverick/bin/tape-backup
+ 
+- To schedule a job for first minute of every year using @daily
+       @daily /home/maverick/bin/cleanup-logs "day started".
+	   
+- To edit to user allow to perticular user  
+      vi /etc/cron.allow
+- To edit to user deny to perticular user 
+      vi /etc/cron.deny
+
+-  To edit the perticular user entry using this command
+    --> crontab -e -n nikhil	  
+******************************************************************************************************************************
+at Command in Linux :- 
+
+   AT command allows users to schedule one-time tasks or recurring jobs at a specific time and date.
+   It is particularly useful for automating system maintenance, backups, software updates, and various administrative tasks. 
+   The AT command works by queuing commands to be executed by the system’s job scheduler at the specified time.
+   
+Syntax of the AT Command:
+   - The basic syntax of the AT command is straightforward:
+      at [-V] [-q queue] [-f file] [-mldbv] timespec
+    
+    V: Display version information.
+   -q queue: Specify the job queue. The default queue is ‘a’.
+   -f file: Read commands from the specified file.
+   -m: Send mail to the user when the job has completed.
+   -l: List the at jobs in the queue.
+   -d: Delete the at job specified by the job number.
+   -b: Submit a batch job. This is the default behavior.
+   -v: Display verbose information about the job.
+   timespec: Specify the time and date when the job should be executed.
+   
+   1.schedule job using "at" command
+    --> at 15:15
+   create a file using touch command (touch file1)
+  
+   2.Cancle the job using this command
+    --> atrm 9 (job id)
+   
+******************************************************************************************************************************
+What is Linux Firewall (firewalld)
+    A virtual wall in the security system world is designed to protect our system from unwanted traffic 
+    and unauthorized access to our system.
+	
+ Types of Linux Firewalls
+     1. IPCop
+     2. iptables
+     3. Shorewall
+     4. UFW
+	 
+   - We will have to install firewall with the command 
+	   sudo apt install firewalld
+	 
+   - We can start and enable it manually 
+       sudo systemctl start firewalld && sudo systemctl enable firewalld
+	   
+   - To check the status of the firewalld service
+      sudo systemctl status firewalld
+	  
+   -   firewall-cmd --state
+	  
+   -   firewall-cmd --get-zones
+	  
+   -   firewall-cmd  --get-default-zone
+   
+   - Adding the tcp port
+       firewall-cmd --zone-public --add-port - 80/tcp
+	 
+   - Check the tcp port
+       firewall-cmd  --list-ports
+	 
+   - any chages is firewall using this commnad data is erase/delete or loss the data
+       firewall-cmd  --reload
+	 
+   - Any modification is done in firewall is save permanently then use this command
+       firewall-cmd --zine-public --add-port-80/tcp --permanent
+	 
+   - display the all details
+       firewall-cmd --list-all
+******************************************************************************************************************************
+Nice Command :  
+
+    Nice is a command-line utility in Linux that allows you to set processes’ “niceness” value. 
+    It is used to start a process with a defined priority. When you start any program or process without any defined priority, 
+    nice set a default priority of 10. A niceness of 19 is the lowest priority, while -20 is the highest priority. 
+    The nice command is very useful when several processes demand more resources than the CPU.  
+ note :- Only the superuser can assign negative values (higher priority) to processes.
+******************************************************************************************************************************
+Renice Command :
+
+    The renice command in Linux is used to change the priority (niceness value) of running processes. 
+    If your system is running very slow due to a lengthy process, you can reduce or increase the priority of that 
+    process with the help of renice command.
+******************************************************************************************************************************
+Display Nice Value of a Process
+
+  Step 1 - You can use the ps or top command to display the priority of a running process.
+           --> ps -fl -C nginx and top 
+ 
+  Step 2 – Change the Priority of Process with Nice Command
+           The nice command can not change the priority of the running process. However, you can use the nice 
+           command to start any program with pre-defined priority.
+		   
+           start a top program with a nice value 5:
+           -->  nice -5 top
+		   
+           Now, open another terminal and verify the priority for the top as shown below:
+           -->   ps -fl -C top  
+		   
+  Step 3 – Change the Priority of Running Process with renice Command
+  
+           First, find the PID of the top process with the following command:
+           -->  pidof top
+		   
+           -->  sudo renice -n -15 -p 7966
+		   
+           -->  sudo renice -n 10 -u root
+******************************************************************************************************************************
+Access Control Lists(ACL) in Linux :
+
+What is ACL ?
+  Access control list (ACL) provides an additional, more flexible permission mechanism for file systems. 
+  It is designed to assist with UNIX file permissions. ACL allows you to give permissions for any user or group to any disc resource.
+
+ setfacl and getfacl are used for setting up ACL and showing ACL respectively.
+
+- List of commands for setting up ACL :
+ 1) To add permission for user
+     setfacl -m "u:user:permissions" /path/to/file
+
+ 2) To add permissions for a group
+     setfacl -m "g:group:permissions" /path/to/file 
+
+ 3) To allow all files or directories to inherit ACL entries from the directory it is within
+     setfacl -dm "entry" /path/to/dir
+
+ 4) To remove a specific entry
+     setfacl -x "entry" /path/to/file
+
+ 5) To remove all entries
+     setfacl -b path/to/file
+
+- Modifying ACL using setfacl :
+ 1) To add permissions for a user (user is either the user name or ID):
+       setfacl -m "u:user:permissions" 
+
+ 2) To add permissions for a group (group is either the group name or ID):
+       setfacl -m "g:group:permissions"
+ 
+ 3) To allow all files or directories to inherit ACL entries from the directory it is within:
+       setfacl -dm "entry" 
+******************************************************************************************************************************
+Linux Process :
+  A process is an executing instance of a program. It can be a foreground process that interacts with the user or a background 
+  process started by a user or another process.
+
+Linux Daemon  : 
+  A daemon in Linux is a background process that operates autonomously, performing tasks without user intervention. 
+  They are the silent heroes of computing, managing tasks and services that ensure our systems run smoothly
+******************************************************************************************************************************
+Partition :
+-  Create Partitions in the Disk :
+    To view the available Hard Disks in our system, use the command lsblk or cat /proc/partitions. 
+    Both commands will display the same results
+
+  Using this command :- lsblk
+  
+ We can find that the system has two disks -> sda and sdb.
+ sda :- 
+ sdb :-
+
+ Show the all disk or Partition using this command
+   sudo fdisk -l or fdisk -l
+
+ We found that the Hard Disk that we are going to partition can be found at /dev/sdb. Use the command.  
+    fdisk /dev/sdb
+
+- m  -> help(print this menu)
+- p  -> print partition table
+- n  -> create new partition
+- d  -> delete partition
+- q  -> quit without writing
+- w  -> write to disk
+- l  -> list know partition type
+- o  -> create a new empty DOS partition table
+- b  -> edit bsd disklabel
+- s  -> create a new empty sun disklabel
+- v  -> verify the partition table
+- x  -> extra functionality (experts only)
+
+- On a disk, we can have a maximum of four partitions.
+- The partitions are of two types.
+    1.Primary Partition
+    2.Extended Partition
+-  Extended partitions can have logical partitions inside it.
+-  Among the four possible partitions, the possible combinations are.
+-  All 4 primary partitions
+-  3 primary partitions and 1 extended partition
+
+-  This will create a new partition. Specify the type of partition using the p for primary and e for extended.
+
+-  we can use the mkfs (make file system) command.
+******************************************************************************************************************************
+Swap Partition :
+
+-   A Swap partition is a feature in linux that provides virtual memory space and multiple benefits.
+
+-   It allows the OS to handle memory demands efficiency.
+
+-   A swap partitions improve system stability responsiveness and heavy workload processing.
+
+  How to Create a Swap Partition
+   1. Run the fdisk command for the disk you want to partition:
+
+     -->sudo fdisk [disk_path]
+    2. Type p and press Enter for an overview of the disk.
+
+    3. Type n and press Enter to create a new partition. For partition type, enter p and press Enter.
+
+    4. Set the partition number (or keep the default number 1) and press Enter to confirm.
+
+    5. Enter the first available sector for the new partition and press Enter. You can also keep the default one offered.
+
+    6. Set the last available sector for the partition. You can specify the partition size in KiB, MiB, or GiB units. We will create a swap partition of 1GiB, so the command is:	
+
+    7. Press p to verify the partition creation and confirm with Enter.
+	
+	8. By default, the partition type is 83, while 82 is a partition type identifier for swap space.
+
+      Type t and press Enter to change the partition type. Change the value to 82 and press Enter.
+	9. Verify the change with p and confirm with Enter.
+
+    10. fdisk doesn't make any changes to the disk before confirmation. To proceed with the changes, type w, and press Enter.
+	
+	11. Update the partition table using the following syntax:
+	 --> sudo partprobe [disk_path]
+	 --> sudo partprobe /dev/sdb
+	 
+	12. Use the mkswap command to format the partition for swap space. The command writes a swap signature in the partition, leaving the rest unformatted. The unformatted space stores the memory pages.
+        Use the following syntax to format the partition and create a swap space:
+
+    --> sudo mkswap [disk_path]
+
+  How to extend a swap partition?
+  1.Check existing Swap :
+     Before resizing the swap partition check the current swapsize and usage.
+	 --> swapon -show
+	 
+  2.Disable Swap :	 
+     To safely resize the swap partition first disable it by runing.
+	 --> sudo swapoff -about
+ 
+  3.Openfdisk for the correct disk :
+     Run fdisk for the disk containing the swap partition you want to resize.
+	 --> sudo fdisk [disk -path]
+
+  4.List partitions :
+     In 'fdisk' type 'p' to print the current partition table.The output display a list of partition on the disk.
+
+  5.Delete Swap Partition :
+     Identify the swap partition in the list and note its starting sector.To delete the swap partition type d and prees enter.
+     The swap partition entry disppers from the partitiontable.
+	 
+  6.Create a new partition :
+     Type n to create a new partition. Follow the prompts:
+
+     Partition type: Select the default value (primary).
+     Partition number: Use the same number as the deleted swap partition.
+     First sector: Specify the start sector. Ensure that you specify the same starting sector as the original swap partition.
+     Last sector: Specify the new size for the swap partition. You can use +<size> to indicate the size in sectors (e.g., +2G for 2 gigabytes).
+  7. Write Changes to Disk
+      Type w to write the changes to the partition table and exit fdisk. The action recreates the swap partition with the new size.
+  
+  8. Format New Partition
+      After resizing the partition, format it using the mkswap command. Use the following syntax:
+  
+    --> sudo mkswap [disk_path]
+   
+   9. Enable Swap :- 
+       Re-enable the swap partition by running:
+     --> sudo swapon -a
+     
+  10. Update /etc/fstab :-
+       To make the changes permanent, update the /etc/fstab file using a text editor to reflect the new swap partition. Replace the old swap partition entry with the new one.
+  11. Reboot
+     
+     Reboot the system to ensure that the changes take effect. Run:
+     
+     sudo reboot
+       
+   
+******************************************************************************************************************************      
+Mount File System in Linux | mount Command :
+ 
+  The mount means temp file.once u create a directory attched the mount onces we reboot the system file is not in save in the
+  
+  mount command is used to mount the filesystem found on a device to big tree structure(Linux filesystem) rooted at ‘/‘. 
+  Conversely, another command umount can be used to detach these devices from the Tree.
+
+- Check the mount disk using this command
+    df -hT
+
+- check the instance is attached or not using this command
+    lsblk
+
+- create a mount files using the this command
+   mount /dev/xvdf2 /storagespace2
+note :- once reboot the system mount files are not available mount.this a temp storage file.
+
+- we save the mount file permanatly then using this command
+    vi /etc/fstab
+ 
+     mount -a
+ 
+note :-when reboot the system then availabel the permanent mount.
+******************************************************************************************************************************
+Managing LVM physical volumes:
+ 
+- LVM is used to manage volume and disk on the linux server.
+   Logical Vilume Manager allows disks to combined together.
+  
+-  The physical volume (PV) is a partition or whole disk designated for LVM use. To use the device for an LVM logical volume, 
+   the device must be initialized as a physical volume.
+
+- Creating LVM physical volume :
+    This procedure describes how to create and label LVM physical volumes (PVs).
+ 
+In this procedure, replace the /dev/vdb1, /dev/vdb2, and /dev/vdb3 with the available storage devices in your system.
+
+ 1) Create multiple physical volumes by using the space-delimited device names as arguments to the "pvcreate' command.
+    - Command to create a pv.
+	--> pvcreate /dev/vdb1 /dev/vdb2 /dev/vdb3
+
+ 2) View the created physical volumes by using any one of the following commands as per your requirement:
+
+    The pvdisplay command, which provides a verbose multi-line output for each physical volume. It displays physical properties, 
+    such as size, extents, volume group, and other options in a fixed format:
+  
+   - Display PV capacity and additional information
+   #  pvdisplay
+      --- NEW Physical volume ---
+      PV Name               /dev/vdb1
+      VG Name
+      PV Size               1.00 GiB
+     [..]
+     --- NEW Physical volume ---
+     PV Name               /dev/vdb2
+     VG Name
+     PV Size               1.00 GiB
+     [..]
+     --- NEW Physical volume ---
+     PV Name               /dev/vdb3
+     VG Name
+     PV Size               1.00 GiB
+
+- The pvs command provides physical volume information in a configurable form, displaying one line per physical volume:
+   # pvs
+      PV         VG  Fmt    Attr    PSize      PFree
+    /dev/vdb1        lvm2           1020.00m   0
+    /dev/vdb2        lvm2           1020.00m   0
+    /dev/vdb3        lvm2           1020.00m   0
+
+- The pvscan command scans all supported LVM block devices in the system for physical volumes. 
+   You can define a filter in the lvm.conf file so that this command avoids scanning specific physical volumes:
+
+  # pvscan
+    PV  /dev/vdb1                      lvm2 [1.00 GiB]
+    PV  /dev/vdb2                      lvm2 [1.00 GiB]
+    PV  /dev/vdb3                      lvm2 [1.00 GiB]
+
+- Removing LVM physical volumes
+
+   If a device is no longer required for use by LVM, you can remove the LVM label by using the pvremove command. 
+   Executing the pvremove command zeroes the LVM metadata on an empty physical volume.
+
+ 1.Remove a physical volume:
+   # pvremove /dev/vdb3
+
+ 2.View the existing physical volumes and verify if the required volume is removed:
+
+  # pvs
+    PV         VG   Fmt    Attr    PSize      PFree
+  /dev/vdb1  	    lvm2           1020.00m   0
+  /dev/vdb2  	    lvm2           1020.00m   0
+******************************************************************************************************************************
+- Create Volume Group (VG) :
+   Creating volume group (vg) means adding physical volume (pv) to vg. Run beneath command to create volume group, 
+   
+   VG must have at least one member (vg00 is our group name and others are our pvs)
+   # vgcreate vgapps /dev/sdb1 /dev/sdb2
+   
+   To display information for a VG named vg00
+
+-  Manage Logical Volumes(LVs) :
+    
+   To create a logical volume
+   # lvcreate -L size(1G or 1t) -n lvname vgname
+   # lvcreate -L 100M -n appl-lv vgapps 
+
+   To display information for a LV
+   #lvdisplay /dev/vgapps/<lvname>   
+******************************************************************************************************************************
+
+******************************************************************************************************************************
+Network File System (NFS):
+  
+  Network File System (NFS) is defined as a network protocol that is used for accessing or sharing files over a network. 
+  By using NFS, users and programs can access files on remote systems almost as if they were local files.
+  
+Client-Server Architecture
+  Network File System works on a client-server architecture. In this architecture, the server hosts the file system which 
+  will be shared and the client can access those shared files.  
+  
+Installation
+  At a terminal prompt enter the following command to install the NFS Server:
+   --> sudo apt install nfs-kernel-server
+   
+  To start the NFS server, you can run the following command at a terminal prompt:
+   --> sudo systemctl start nfs-kernel-server.service 
+****************************************************************************************************************************** 
+- ping command :
+    The ping command is used to ensure that a computer can communicate with a specified device over the network. The pings command sends Internet Control Message Protocol (ICMP) Echo Request messages in the form of packets to the destination computer and waits in order to get the response back. Once the packets are received by the destined computer, it starts sending the packets back. This command keeps executing until it is interrupted.    
+  ping command provides details such as 
+   1.The number of packets transmitted.
+   2.The number of packets received.
+   3.Time is taken by the packet to return.
+
+    --> ping google.com
+    
+    --> ping 216.58.203.142
+	
+- Using nslookup Command
+     The nslookup command queries the DNS in order to fetch the IP address or the domain name from DNS records. 
+ 
+ --> nslookup facebook.com
+
+- Using host Command
+     The host command is used to find a domain name associated with the IP address or find an IP address associated with the domain name. The returned IP address is either IPv4 or IPv6.   
+    
+    --> host google.com
+	
+- Using netstat Command
+     The netstat (Network Statistics) is the command that is used to display routing tables, connection information, the status of ports, etc. This command works with Linux Network Subsystem. This command basically displays the content of /proc/net file defined in the Linux file system.  	
+     
+	 --> netstat
+- Using Arp Command
+     The ARP (Address Resolution Protocol) command is used to display and modify ARP cache, which contains the mapping of IP address to MAC address. The system’s TCP/IP stack uses ARP in order to determine the MAC address associated with an IP address. 
+  
+  --> arp
+
+- Using Route Command
+The Route Command tool helps us display and manipulate the routing table in Linux. Information contained by this is about how network packets should be routed through a network.
+  
+
+
+
+
+******************************************************************************************************************************
+Linux Backup Management :
+
+  1.Local Backup 
+  2.Remote Backup
+  3.Manual and Automation Backup
+******************************************************************************************************************************  
+  - PS (Process Status) :
+      ps command to list running process in linux.
+	
+	1.simple process selection :
+	    Shows the process for the current shell.
+	 --> ps (which stands for "process status")
+    
+    2.ps -A :-
+         View all running process in linux.To view all running processes are either of the following optionswith "ps" command
+     --> ps -A
+     --> ps -e
+     --> ps -a	
+    
+    3.List all the process except session leader in linux.using thsi command
+     --> ps -d
+
+    4.List all process associated with this terminal linux using this command
+     --> ps -T	
+	 
+	 5.View all process owned by you
+	  
+	 --> ps -x
+	 
+	 The "top" command to list running process in linux.
+	 --> top
+	 
+	  PID     :- Process ID
+      USER    :- Owner of the process
+      PR      :- Priority	
+	  NI      :- Nice value
+      VIRT    :- Virtual memory usage
+      RES     :- Resident set size	
+	  SHR     :- Shared memory
+	  PS       :- Process status
+	  %CPU    :- Percentage of cpu usage
+	  %MEM    :- Percentage of memory usage
+	  TIME+   :- Total cpu time
+	  Command :- Command or process name
+	

@@ -1,0 +1,33 @@
+There are a few steps you can take to troubleshoot a network of computers that are unable to connect to the internet:
+
+**Check the cables and connections.** Make sure that all cables are securely plugged in and that there are no loose connections.
+
+**Restart the router.** Unplug the router, wait a few seconds, and then plug it back in. This can often resolve connectivity issues.
+
+**Check the router's settings.** Make sure that the router is configured correctly and that the network is set up properly.
+
+**Check the IP addresses.** Make sure that all computers on the network have unique IP addresses and that they are correctly configured.
+
+**Check for software updates.** Make sure that all computers on the network have the latest software and security updates installed.
+
+**Check for malware.** Make sure that all computers on the network are free from malware or other security threats.
+
+**Check the DNS settings.** Make sure that the DNS settings on the network are correct.
+
+**Contact the ISP.** If none of the above steps resolve the issue, contact your internet service provider for assistance.
+
+
+************************************************************************************************************************************************
+1.192.168.10.0                     --> Network ID
+  192.168.10.1 to 192.168.10.126   --> Number of IP address can be assigned
+  192.168.10.127                   --> Broadcast ID
+
+2.192.168.10.128                   --> Network ID
+  192.168.10.129 to 192.168.10.254 --> Number of IP address can be assigned
+  192.168.10.255                   --> Broadcast ID
+
+Network   NetworkID           HostAddress                        BroadcastID 
+1        192.168.10.0      192.168.10.1   - 192.168.10.62      192.168.10.63
+2        192.168.10.64     192.168.10.65  - 192.168.10.126     192.168.10.127
+3        192.168.10.128    192.168.10.129 - 192.168.10.190     192.168.10.191
+4        192.168.10.192    192.168.10.193 - 192.168.10.254     192.168.10.255

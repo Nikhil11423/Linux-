@@ -1,0 +1,14 @@
+#	Cloud Service Provider	    Regions 	Availability Zones
+1	Amazon Web Services (AWS)	33	105
+2	Microsoft Azure         	64	126
+3	Google Cloud Platform (GCP)	40	121
+4	Alibaba Cloud           	30	89
+5	Oracle Cloud            	48	58
+6	IBM Cloud	                10	30
+7	Tencent Cloud            	21	65
+8	OVHcloud                	17	37
+9	DigitalOcean            	9	15
+10	Linode (Akamai)	                20	20
+
+
+1.why 

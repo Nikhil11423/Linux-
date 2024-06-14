@@ -1,0 +1,263 @@
+How to Install LAMP Server on Amazon Linux 2
+
+* To get started with the installation of Apache, be sure to update all the packages to their latest versions as follows:
+     --> sudo yum update
+
+ * To install Apache web server, run the command:
+
+    --> sudo yum install httpd
+
+    --> sudo systemctl start httpd
+
+    --> sudo systemctl enable httpd
+
+    --> sudo systemctl status httpd
+
+    --> http://ec2-instance-public-ip (http://3.109.181.78/)
+
+Step 2: Install MariaDB Database Server
+
+ * To install MariaDB, run the command:
+    --> sudo yum install mariadb-server
+  
+  Once installed, start the MariaDB service.
+   --> sudo systemctl start mariadb
+
+   --> sudo systemctl enable mariadb
+
+   --> sudo systemctl status mariadb
+
+* To harden MariaDB and tighten its security, run the following script:
+
+   --> sudo mysql_secure_installation
+      username = root /Nikhil@123
+
+* Once that is finalized, now try logging into MariaDB and provide the root user password you just configured.
+
+   --> sudo mysql -u root -p
+
+Step 3: Install PHP 8.1 and PHP Extensions
+  
+ * To get started, add the EPEL repository as follows:
+
+   --> sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -y
+
+ * Next, add the REMI repository.
+
+   --> sudo yum install  https://rpms.remirepo.net/enterprise/remi-release-7.rpm -y
+
+ * Be sure to update the yum cache.
+
+   --> sudo yum makecache
+ * Once the cache is updated, install the yum-utils package.
+
+   --> sudo yum install yum-utils
+
+ * Next, confirm the availability of PHP 8.x from the amazon-linux-extras repository.
+
+   --> sudo  amazon-linux-extras | grep php
+ 
+ * The next step is to enable PHP 8.1 from the amazon-linux-extras repository.
+
+   --> sudo yum-config-manager –disable ‘remi-php*’
+
+   --> sudo amazon-linux-extras enable php8.1 
+
+   --> yum clean metadata
+
+   --> yum install php-cli php-pdo php-fpm php-json php-mysqlnd
+
+ * Once enabled, now you can install PHP 8.1 with associated extensions.
+
+   --> sudo yum clean
+ 
+   -->sudo yum install php-{curl,pear,gd,mbstring,bcmath,pdo,mbstring,mysqlnd,json,xml,zip,common,cgi,intl}
+
+ * Now confirm the version of PHP installed.
+
+    --> php –v
+
+    --> sudo nano /var/www/html/info.php
+
+ * Paste the following lines:
+
+    <?php 
+     phpinfo(); 
+     ?>
+ * Save the changes. Then restart the Apache web server.
+
+   --> sudo systemctl restart httpd
+   
+ * Enter the ip in browse
+
+   --> http://server-ip/info.php 
+ 
+ * restart the httpd server
+   
+   --> systemctl restart httpd
+
+ * Install the remi
+   
+   --> yum --enablerepo=remi,remi-test install phpmyadmin
+   
+   --> cd /etc/httpd
+   --> ls -l
+   
+   --> cd conf.d
+   --> ls -l
+   
+   --> vi phpMyadmin.conf
+
+*************************************************************
+Note :- Add this code in vi file
+Alias /phpMyAdmin /usr/share/phpMyAdmin
+Alias /phpmyadmin /usr/share/phpMyAdmin
+<Directory /usr/share/phpMyAdmin/>
+   AddDefaultCharset UTF-8
+<IfModule mod_authz_core.c>
+     # Apache 2.4
+<RequireAny>
+       Require all granted
+       Require ip 127.0.0.1
+       Require ip ::1
+</RequireAny>
+</IfModule>
+<IfModule !mod_authz_core.c>
+     # Apache 2.2
+     Order Deny,Allow
+     Deny from All
+     Allow from 127.0.0.1
+     Allow from ::1
+</IfModule>
+</Directory>
+<Directory /usr/share/phpMyAdmin/setup/>
+<IfModule mod_authz_core.c>
+     # Apache 2.4
+<RequireAny>
+       Require ip 127.0.0.1
+       Require ip ::1
+</RequireAny>
+</IfModule>
+<IfModule !mod_authz_core.c>
+     # Apache 2.2
+     Order Deny,Allow
+     Deny from All
+     Allow from 127.0.0.1
+     Allow from ::1
+</IfModule>
+</Directory>
+# These directories do not require access over HTTP - taken from the original
+# phpMyAdmin upstream tarball
+#
+<Directory /usr/share/phpMyAdmin/libraries/>
+<IfModule mod_authz_core.c>
+     # Apache 2.4
+     Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+     # Apache 2.2
+     Order Deny,Allow
+     Deny from All
+     Allow from None
+</IfModule>
+</Directory>
+<Directory /usr/share/phpMyAdmin/setup/lib/>
+<IfModule mod_authz_core.c>
+     # Apache 2.4
+     Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+     # Apache 2.2
+     Order Deny,Allow
+     Deny from All
+     Allow from None
+</IfModule>
+</Directory>
+<Directory /usr/share/phpMyAdmin/setup/lib/>
+<IfModule mod_authz_core.c>
+     # Apache 2.4
+     Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+     # Apache 2.2
+     Order Deny,Allow
+     Deny from All
+     Allow from None
+</IfModule>
+</Directory>
+<Directory /usr/share/phpMyAdmin/setup/frames/>
+<IfModule mod_authz_core.c>
+     # Apache 2.4
+     Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+     # Apache 2.2
+     Order Deny,Allow
+     Deny from All
+     Allow from None
+</IfModule>
+</Directory>
+# This configuration prevents mod_security at phpMyAdmin directories from
+# filtering SQL etc.  This may break your mod_security implementation.
+#
+#<IfModule mod_security.c>
+#    <Directory /usr/share/phpMyAdmin/>
+#        SecRuleInheritance Off
+#    </Directory>
+#</IfModule>
+********************************************************************************
+
+
+ * restart the httpd server
+   
+   --> systemctl restart httpd
+ 
+ * Sign in mysql user
+  --> mysql -u root -p
+
+ * Download the file 
+  --> wget https://github.com/osTicket/osTicket/releases/download/v1.17.5/osTicket-v1.17.5.zip
+ 
+* move the file html directory
+  --> sudo mv osTicket-v1.17.5.zip /var/www/html
+
+* Go to the html directory    
+  --> cd /var/www/html
+
+* Unzip the file using this command  
+  --> unzip osTicket-v1.17.5.zip
+     
+  -->  cd upload
+ 
+  -->  cd include/
+
+*Rename the file name   
+  -->  mv ost-sampleconfig.php ost-config.php
+
+* Give the permission to file 
+  -->   chmod 0666 ost-config.php
+
+* Give the permission to file
+  -->   chmod 0777 ost-config.php
+  -->   cd ..
+  -->   cd ..
+* Give the permission to directory
+  -->   chmod -R 777 upload/
+  -->   ls -l
+
+  -->   sestatus
+
+  -->   sudo vi /etc/selinux/config
+
+  -->   systemctl restart httpd
+
+  -->   systemctl status httpd
+*****************************************************************************************************
+*phpMYAdmin
+Username : root
+Password : Nikhil@123
+----------------------
+*OSticket
+HelpdiskName : NikhilB
+Username : Nikhil007 /nikhilbasannavar@gmail.com
+Password : Nikhil@123 

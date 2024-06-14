@@ -1,0 +1,47 @@
+How to install and configure FTP server 
+-->
+
+To install vsftpd on Ubuntu, Debian, and Linux Mint:
+-->  sudo apt install vsftpd
+
+To install vsftpd on Fedora, CentOS, AlmaLinux, and Red Hat
+-->  sudo dnf install vsftpd
+ 
+Using this command 
+
+1.systemctl start vsftpd
+2.systemctl enable vsftpd
+3.systemctl status vsftpd
+
+Apply the firewall
+1.firewall-cmd --permanent --add-service=ftp
+
+2.firewall-cmd --reload
+
+Showing the IP address
+3.ip a
+
+Configuration file for FTPd
+vim /etc/vsftpd/vsftpd.conf
+
+Change the anonymous enable yes to no
+
+then restart the servies.
+
+Open Configuration file
+ un-comment chroo_local_user=YES
+ add the allow_writable_chroot=YES   
+
+then restart the server
+systemctl restart vsftpd
+
+Create one directory
+mkdir /ftp-data
+
+Then add a user and set password
+
+Create a file and use ls -lz
+
+semange fcontext -a -t public_content_t '/ftp-data(/.*)?'
+
+restorecon -vvRF /ftp-data/

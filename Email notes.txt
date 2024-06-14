@@ -1,0 +1,18 @@
+Edit the crontab entries using crontab -e command (by default this will edit the current logged-in users crontab) and add the following line:
+
+0 0 * * 1,3,5 $HOME/scripts/send_email.sh >> $HOME/tmp/out 2>&1
+Now you should create send_email.sh script. Something like this:
+
+#!/bin/bash
+
+recipients="user0@domain.com user1@domain.com user2@domain.com"
+subject="...Subject..."
+
+cat $HOME/email_message | mail -s $subject $recipients
+$HOME/email_message is the message (file) you want to send.
+
+Don't forget to grant execute access for the script:
+
+chmod +x $HOME/scripts/send_email.sh
+
+Incoming mail is not affected, except that you have remember to to open the appropriate ports (TCP 25, 110, 143, 465, 587, 993, 995)
